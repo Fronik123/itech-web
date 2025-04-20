@@ -1,0 +1,30 @@
+// @import "./variables.scss";
+@use "./variables.scss" as b;
+
+header,
+main,
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+
+  @media (min-width: b.$bigger-desktop) {
+    width: 1320px;
+  }
+
+  @media (min-width: b.$desktop) {
+    width: 1170px;
+  }
+
+  @media (min-width: b.$tablet) {
+    width: 720px;
+  }
+
+  @media (min-width: b.$bigger-mobile) {
+    width: 540px;
+  }
+}

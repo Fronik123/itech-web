@@ -1,0 +1,14 @@
+// @use "./color.scss";
+// @use "./variables.scss";
+
+.link {
+  color: var(--black-color);
+  transition: var(--transition-03);
+  font-weight: 700;
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: var(--violett-color);
+  }
+}
