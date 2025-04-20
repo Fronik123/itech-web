@@ -1,6 +1,3 @@
-// @use "./color.scss";
-// @use "./variables.scss";
-
 .link {
   color: var(--black-color);
   transition: var(--transition-03);
@@ -11,4 +8,8 @@
   &:focus {
     color: var(--violett-color);
   }
+}
+
+.link_active {
+  color: var(--violett-color);
 }

@@ -9,13 +9,6 @@ footer {
   align-items: center;
 }
 
-header .container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: var(--gap);
-}
-
 .container {
   width: 100%;
 
@@ -31,16 +24,5 @@ header .container {
   }
   @media (min-width: b.$bigger-desktop) {
     width: 1320px;
-  }
-}
-
-.navigation {
-  ul {
-    display: flex;
-    gap: var(--gap);
-
-    text-transform: uppercase;
-
-    font: var(--smaller-font);
   }
 }

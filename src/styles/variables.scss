@@ -6,9 +6,11 @@ $bigger-mobile: 576px;
 :root {
   // font
   --smaller-font: 700 12px "Inter", sans-serif;
+  --font: 400 14px "Inter", sans-serif;
+  --biggest-font: 700 40px "Inter", sans-serif;
 
   //spacers
-  --gap: 15px;
+  --gap: 20px;
 
   --transition-03: 0.3s;
 }

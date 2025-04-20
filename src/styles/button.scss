@@ -1,18 +1,48 @@
 .button {
+  --size: 40px;
+
+  height: var(--size);
+  padding: 0 var(--size);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid var(--grey-color);
   transition: var(--transition-03);
-  border-radius: 10px;
+  border-radius: var(--size);
   font-weight: 700;
+
+  color: var(--black-color);
   cursor: pointer;
 
   &:hover,
   &:focus {
+    background-color: var(--violett-color);
+    color: var(--white-color);
     border: 1px solid var(--violett-color);
+
+    svg {
+      fill: var(--white-color);
+    }
   }
 
-  &--round {
-    height: 40px;
-    width: 40px;
+  &_round {
+    padding: 0;
+    width: var(--size);
     border-radius: 50%;
+  }
+
+  &_active {
+    background-color: var(--violett-color);
+    color: var(--white-color);
+    border: 1px solid var(--violett-color);
+
+    svg {
+      fill: var(--white-color);
+    }
+  }
+
+  &_bigger {
+    height: calc(var(--size) * 1.15);
+    padding: 0 calc(var(--gap) * 1.5);
   }
 }
