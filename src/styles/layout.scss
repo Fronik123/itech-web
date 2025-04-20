@@ -9,22 +9,38 @@ footer {
   align-items: center;
 }
 
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--gap);
+}
+
 .container {
   width: 100%;
 
-  @media (min-width: b.$bigger-desktop) {
-    width: 1320px;
+  @media (min-width: b.$bigger-mobile) {
+    width: 540px;
+  }
+  @media (min-width: b.$tablet) {
+    width: 720px;
   }
 
   @media (min-width: b.$desktop) {
     width: 1170px;
   }
-
-  @media (min-width: b.$tablet) {
-    width: 720px;
+  @media (min-width: b.$bigger-desktop) {
+    width: 1320px;
   }
+}
 
-  @media (min-width: b.$bigger-mobile) {
-    width: 540px;
+.navigation {
+  ul {
+    display: flex;
+    gap: var(--gap);
+
+    text-transform: uppercase;
+
+    font: var(--smaller-font);
   }
 }

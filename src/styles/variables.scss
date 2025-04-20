@@ -4,5 +4,11 @@ $tablet: 768px;
 $bigger-mobile: 576px;
 
 :root {
+  // font
+  --smaller-font: 700 12px "Inter", sans-serif;
+
+  //spacers
+  --gap: 15px;
+
   --transition-03: 0.3s;
 }

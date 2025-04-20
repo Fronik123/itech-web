@@ -1,0 +1,18 @@
+.button {
+  border: 1px solid var(--grey-color);
+  transition: var(--transition-03);
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border: 1px solid var(--violett-color);
+  }
+
+  &--round {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+  }
+}
