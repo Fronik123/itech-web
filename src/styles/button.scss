@@ -1,5 +1,7 @@
+@use "./variables.scss" as s;
+
 .button {
-  --size: 40px;
+  --size: 30px;
 
   height: var(--size);
   padding: 0 var(--size);
@@ -44,5 +46,20 @@
   &_bigger {
     height: calc(var(--size) * 1.15);
     padding: 0 calc(var(--gap) * 1.5);
+  }
+
+  @media (min-width: s.$tablet) {
+    --size: 40px;
+  }
+
+  &_white {
+    background-color: var(--white-color);
+    color: var(--black-color);
+    height: 20px;
+    padding: 0 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
   }
 }

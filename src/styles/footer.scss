@@ -1,3 +1,5 @@
+@use "./variables.scss" as s;
+
 footer {
   margin-top: auto;
   position: relative;
@@ -49,16 +51,52 @@ footer {
   .footer__center {
     width: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
+    // justify-content: space-between;
+    // align-items: center;
     gap: var(--gap);
     padding: var(--gap) 0;
     border-bottom: 2px solid var(--grey-color);
+
+    @media (min-width: s.$tablet) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  }
+
+  .footer__navigation ul {
+    flex-wrap: wrap;
+
+    li {
+      display: flex;
+      width: 80px;
+      align-items: start;
+    }
+
+    @media (min-width: s.$tablet) {
+      justify-content: space-between;
+    }
+
+    @media (min-width: s.$desktop) {
+      li {
+        width: auto;
+      }
+    }
   }
 
   .footer__buttons {
     display: flex;
+    flex-direction: column;
     gap: var(--gap);
+
+    @media (min-width: s.$bigger-mobile) {
+      flex-direction: row;
+    }
+  }
+
+  .footer__button {
+    white-space: nowrap;
   }
 
   .footer__bottom {

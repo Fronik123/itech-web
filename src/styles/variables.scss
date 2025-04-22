@@ -1,16 +1,27 @@
 $bigger-desktop: 1400px;
 $desktop: 1200px;
+$bigger-tablet: 992px;
 $tablet: 768px;
 $bigger-mobile: 576px;
 
 :root {
   // font
-  --smaller-font: 700 12px "Inter", sans-serif;
-  --font: 400 14px "Inter", sans-serif;
-  --biggest-font: 700 40px "Inter", sans-serif;
+  --smaller-font: 700 11px "Inter", sans-serif;
+  --font: 400 13px "Inter", sans-serif;
+  --biggest-font: 700 24px "Inter", sans-serif;
 
   //spacers
-  --gap: 20px;
+  --gap: 15px;
 
   --transition-03: 0.3s;
+
+  @media (min-width: $tablet) {
+    --smaller-font: 700 12px "Inter", sans-serif;
+    --font: 400 14px "Inter", sans-serif;
+    --biggest-font: 700 40px "Inter", sans-serif;
+  }
+
+  @media (min-width: $bigger-tablet) {
+    --gap: 20px;
+  }
 }
