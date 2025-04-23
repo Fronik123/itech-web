@@ -2,5 +2,5 @@
 import { defineConfig } from "vite";
 
 export default defineConfig({
-  base: "/Fronik123/",
+  base: "/itech-web/",
 });
