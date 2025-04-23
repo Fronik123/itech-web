@@ -48,7 +48,7 @@
     padding: 0 calc(var(--gap) * 1.5);
   }
 
-  @media (min-width: s.$tablet) {
+  @media (min-width: s.$bigger-tablet) {
     --size: 40px;
   }
 
