@@ -17,6 +17,11 @@ $bigger-mobile: 576px;
 
   --transition-03: 0.3s;
 
+  //z-index
+  --almost-main-index: 68;
+  --main-index: 69;
+  --bigger-main-index: 70;
+
   @media (min-width: $tablet) {
     --smaller-font: 700 12px "Inter", sans-serif;
     --font: 400 14px "Inter", sans-serif;
