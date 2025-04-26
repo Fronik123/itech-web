@@ -3,4 +3,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   base: "/itech-web/",
+  build: {
+    outDir: "dist",
+  },
 });
