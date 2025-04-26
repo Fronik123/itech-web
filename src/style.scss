@@ -37,11 +37,25 @@ li {
   list-style: none;
 }
 
+img {
+  width: 100%;
+  height: auto;
+}
+
 @keyframes rotate-center {
   0% {
     transform: rotate(0);
   }
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes side-up-down {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-20px);
   }
 }
