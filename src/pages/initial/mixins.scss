@@ -1,0 +1,31 @@
+@use "./../../styles/variables.scss" as screen;
+@use "../../styles/mixins.scss" as globalMixins;
+
+@mixin rotate-center($space: 0, $image) {
+  position: absolute;
+  top: $space;
+  left: $space;
+  right: $space;
+  bottom: $space;
+
+  @include globalMixins.background-image($image);
+
+  z-index: -1;
+  overflow: clip;
+
+  animation: rotate-center 100s linear infinite both;
+}
+
+@mixin half-container-image($image) {
+  height: 390px;
+
+  @include globalMixins.background-image($size: contain, $image: $image);
+
+  @media (min-width: screen.$bigger-mobile) {
+    height: 500px;
+  }
+
+  @media (min-width: screen.$tablet) {
+    height: 660px;
+  }
+}

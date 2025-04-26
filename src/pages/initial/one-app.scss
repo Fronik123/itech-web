@@ -1,4 +1,5 @@
 @use "./../../styles/variables.scss" as s;
+@use "./mixins.scss" as localMixin;
 
 .one-app {
   $double-gap: calc(var(--gap) * 2);
@@ -8,19 +9,9 @@
   z-index: 1;
 
   &__animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-
-    background-image: url("../../assets/images/initial/one-app-bubble.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    z-index: -1;
-
-    animation: rotate-center 100s linear infinite both;
+    @include localMixin.rotate-center(
+      $image: "../../assets/images/initial/one-app-bubble.png"
+    );
   }
 
   &__container {
@@ -55,19 +46,9 @@
   }
 
   &__right {
-    height: 390px;
-    background-image: url("../../assets/images/initial/one-app-background.png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: contain;
-
-    @media (min-width: s.$bigger-mobile) {
-      height: 500px;
-    }
-
-    @media (min-width: s.$tablet) {
-      height: 660px;
-    }
+    @include localMixin.half-container-image(
+      "../../assets/images/initial/one-app-background.png"
+    );
   }
 
   &__buttons {
