@@ -6,7 +6,7 @@
   width: 100%;
   position: relative;
   background-color: var(--creame-color);
-  padding: $double-gap 0;
+  padding: calc($double-gap + 20px) 0;
 
   &__circle {
     position: absolute;
