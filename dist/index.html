@@ -1,12 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/itech-web/vite.svg" />
+    <meta charset="UTF-8" />   
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/itech-web/assets/apple-touch-icon-D5fqmBkD.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/itech-web/assets/favicon-32x32-BaSdVGFO.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/itech-web/assets/favicon-16x16-DAKoK1-z.png"
+    />
+    <link rel="manifest" href="/itech-web/assets/site-DjwwQ8Rg.webmanifest" />
+
+    <link
+      rel="mask-icon"
+      href="data:image/svg+xml,%3c?xml%20version='1.0'%20standalone='no'?%3e%3c!DOCTYPE%20svg%20PUBLIC%20'-//W3C//DTD%20SVG%2020010904//EN'%20'http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd'%3e%3csvg%20version='1.0'%20xmlns='http://www.w3.org/2000/svg'%20width='180.000000pt'%20height='180.000000pt'%20viewBox='0%200%20180.000000%20180.000000'%20preserveAspectRatio='xMidYMid%20meet'%3e%3cmetadata%3e%20Created%20by%20potrace%201.14,%20written%20by%20Peter%20Selinger%202001-2017%20%3c/metadata%3e%3cg%20transform='translate(0.000000,180.000000)%20scale(0.100000,-0.100000)'%20fill='%23000000'%20stroke='none'%3e%3cpath%20d='M394%201771%20c-104%20-30%20-175%20-70%20-245%20-140%20-38%20-38%20-77%20-89%20-92%20-121%20-54%20-112%20-57%20-143%20-57%20-542%20l0%20-368%20305%200%20305%200%200%20-300%200%20-300%20361%200%20c397%200%20424%203%20549%2062%2081%2039%20186%20141%20223%20218%2054%20112%2057%20143%2057%20542%20l0%20368%20-305%200%20-305%200%200%20300%200%20300%20-367%20-1%20c-320%200%20-376%20-3%20-429%20-18z%20m796%20-876%20l0%20-295%20-290%200%20-290%200%200%20295%200%20295%20290%200%20290%200%200%20-295z'/%3e%3c/g%3e%3c/svg%3e"
+      color="#5bbad5"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>Vite App</title>
-    <link rel="stylesheet" crossorigin href="/itech-web/assets/index-DM3lCrC9.css">
+    <title>Itech</title>
+
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" crossorigin href="/itech-web/assets/index-BQa5ixZe.css">
   </head>
   <body>
     <div class="top-banner">
@@ -49,49 +74,23 @@
         <div class="header__menu">
           <nav class="navigation header__navigation">
             <ul>
+              <li><a class="link" href="#featured">Featured</a></li>
               <li>
-                <a class="link" href="./src/pages/about/index.html">About</a>
+                <a class="link" href="#about">About</a>
               </li>
-              <li><a class="link" href="./src/pages/product/">Product</a></li>
-              <li>
-                <a class="link" href="./src/pages/shop/index.html">Service</a>
-              </li>
-              <li>
-                <a class="link" href="./src/pages/shop/index.html">Shop</a>
-              </li>
-              <li>
-                <a class="link" href="./src/pages/project/index.html"
-                  >Project&nbsp;&nbsp;
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="10"
-                    height="10"
-                    fill="currentColor"
-                    class="bi bi-chevron-down header__svg_tablet"
-                    viewBox="0 0 16 16"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
-                    />
-                  </svg>
-                </a>
-              </li>
+
               <li class="header__link_tablet header__link_tablet_one">
-                <a class="link" href="./src/pages/post/index.html">Post</a>
-              </li>
-              <li class="header__link_tablet header__link_tablet_two">
-                <a class="link" href="./src/pages/portfolio/index.html"
-                  >Portfolio</a
+                <a class="link" href="#integration"
+                  >Popular apps</a
                 >
               </li>
+
               <li class="header__link_tablet header__link_tablet_three">
-                <a class="link" href="./src/pages/blog/index.html">Blog</a>
+                <a class="link" href="#carousel">Screens</a>
               </li>
+
               <li class="header__link_tablet header__link_tablet_four">
-                <a class="link" href="./src/pages/contact/index.html"
-                  >Contact</a
-                >
+                <a class="link" href="#community">FAQ</a>
               </li>
             </ul>
           </nav>
@@ -280,14 +279,361 @@
         </div>
       </section>
 
-      <section class="features">
+      <section id="featured" class="features">
+        <div class="features__circle"></div>
         <div class="container features__container">
           <p class="text_with-bg text_with-bg_white">Notero - Easy Notes App</p>
           <p class="text_biggest">
             Awesome <span class="text_gradient">Features</span>
           </p>
+          <ul class="features__items">
+            <li class="features__item">
+              <img
+                src="/itech-web/assets/features-1-CGGhO7K9.png"
+                alt="Features-1"
+              />
+              <p class="text_bold">Notes Powerful and Security</p>
+            </li>
+            <li class="features__item">
+              <img
+                src="/itech-web/assets/features-2-Cn5vzF6l.png"
+                alt="Features-2"
+              />
+              <p class="text_bold">Easy Sort, Classify and Search</p>
+            </li>
+            <li class="features__item">
+              <img
+                src="/itech-web/assets/features-3-DM1okG52.png"
+                alt="Features-3"
+              />
+              <p class="text_bold">Collaboration and Share</p>
+            </li>
+            <li class="features__item">
+              <img
+                src="/itech-web/assets/features-4-DezPne29.png"
+                alt="Features-4"
+              />
+              <p class="text_bold">Quick Note In Everywhere</p>
+            </li>
+            <li class="features__item">
+              <img
+                src="/itech-web/assets/features-5-7aXdaQCH.png"
+                alt="Features-5"
+              />
+              <p class="text_bold">Write and Draw on Ipad</p>
+            </li>
+          </ul>
         </div>
         <div class="features__wave"></div>
+      </section>
+
+      <section id="about" class="notero">
+        <div class="container notero__container">
+          <div class="notero__left">
+            <div class="notero__animation"></div>
+          </div>
+
+          <div class="notero__right">
+            <p class="text_with-bg">Notero - Easy Notes App</p>
+
+            <p class="text_biggest">
+              The Notero For <span class="text_gradient">Creatives</span>
+            </p>
+            <p class="notero__description">
+              Stay focused and productive with a clean and clutter-free note
+              <br />
+              space. The flexible ways to organize your notes: hashtags, nested
+              <br />
+              notebooks, pinning notes to the top of the note list, etc
+            </p>
+
+            <div class="notero__benefits">
+              <div class="notero__benefit">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-journal-bookmark-fill"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M6 1h6v7a.5.5 0 0 1-.757.429L9 7.083 6.757 8.43A.5.5 0 0 1 6 8V1z"
+                    />
+                    <path
+                      d="M3 0h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2v-1h1v1a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v1H1V2a2 2 0 0 1 2-2z"
+                    />
+                    <path
+                      d="M1 5v-.5a.5.5 0 0 1 1 0V5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0V8h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1zm0 3v-.5a.5.5 0 0 1 1 0v.5h.5a.5.5 0 0 1 0 1h-2a.5.5 0 0 1 0-1H1z"
+                    />
+                  </svg>
+                </div>
+                <p class="text_bold">Filtering notes using matched keywords</p>
+              </div>
+              <div class="notero__benefit">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-fire"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16Zm0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15Z"
+                    />
+                  </svg>
+                </div>
+                <p class="text_bold">Automatically sync in real time</p>
+              </div>
+              <div class="notero__benefit">
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-option"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M1 2.5a.5.5 0 0 1 .5-.5h3.797a.5.5 0 0 1 .439.26L11 13h3.5a.5.5 0 0 1 0 1h-3.797a.5.5 0 0 1-.439-.26L5 3H1.5a.5.5 0 0 1-.5-.5zm10 0a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5z"
+                    />
+                  </svg>
+                </div>
+                <p class="text_bold">
+                  Complete note editor with rich text options
+                </p>
+              </div>
+            </div>
+            <a class="button button_active" href="#">Free Registar</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="security">
+        <div class="notero__animation"></div>
+        <div class="container security__container">
+          <div class="security__left">
+            <p class="text_with-bg">Better Note Management</p>
+            <p class="text_biggest">
+              Your Notes <span class="text_gradient">Security</span>
+            </p>
+            <p class="security__description">
+              Automatically syncs across all your devices. You can also access
+              and write notes without internet connection.
+            </p>
+            <div>
+              <button class="button-dropdown">
+                <div class="button-dropdown__top">
+                  <p class="text text_bold">
+                    Create And Save Your Notes With Multi-Media
+                  </p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-down header__svg_tablet"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </div>
+                <p class="button-dropdown__bottom">
+                  Images, videos, PDFs and audio files are supported. Create
+                  math expressions and diagrams directly from the app. Take
+                  photos with the mobile app and save them to a note.
+                </p>
+              </button>
+              <button class="button-dropdown button-dropdown_active">
+                <div class="button-dropdown__top">
+                  <p class="text text_bold">Web Clipper Extension</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-down header__svg_tablet"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </div>
+                <p class="button-dropdown__bottom">
+                  Images, videos, PDFs and audio files are supported. Create
+                  math expressions and diagrams directly from the app. Take
+                  photos with the mobile app and save them to a note.
+                </p>
+              </button>
+              <button class="button-dropdown">
+                <div class="button-dropdown__top">
+                  <p class="text text_bold">Protect Your Note With Lock</p>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-chevron-down header__svg_tablet"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      fill-rule="evenodd"
+                      d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"
+                    />
+                  </svg>
+                </div>
+                <p class="button-dropdown__bottom">
+                  Images, videos, PDFs and audio files are supported. Create
+                  math expressions and diagrams directly from the app. Take
+                  photos with the mobile app and save them to a note.
+                </p>
+              </button>
+            </div>
+            <a
+              class="button-img"
+              href="https://chrome.google.com/webstore/category/extensions"
+              target="_blank"
+            >
+              <div class="button-img__left">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAFW0lEQVRIiaWWaWxUVRSAv/uW6Uw7006hpYW22oUikRprNcoi1KCoNLJIwg9JENAEJcZEI8TGRIn+MQTX8ANMNNSFiBI2FYlRogVNgB9SBAsUgaEUutGWLtOZdt5719zplLSdGSzxvNzk3eWd791zzzn3iEvFdzEOKQOqgNnANCAbSAH6gGagHjgM/BDrJ5X/As4HNgBPjuevgAHgK2ATcD7RAi3Jhy5gO3DoNmDEdv08cA6oHi+wEDgNrL4N0FgRwLvA3jigJkE1MdTPB04Apf8DNlKWArUjB0S/vwTDkYRNIdr9RkDAHULeQoWUSMsCxwFdRxjGeMA7gWfUi87a6eyu9CM1UfPAuVBlT5pOHFDXwbaJXG7E6WoHZ2iBc6Mbq70ZGYqA5kcOiGStTA6KBieonRZT9y/khlcvz2+PnNj15mWmdERoyTSiZo6awDSxrl7F6evDu3gR2csWYcy8D9J90NJG6LejdOzZjRX4HeHLR+hpIJ0RNlRWEcowIT3d9ovKTx9Dd+SvDQXuR1b83MWmrc1cznWpNVFY5MIF9Kws8rZtwbVkSVTHJaB7EHJdkBvT65zfiN3yDugCjDRFGXEMQ03zOtUKeCcQGDQFHRkGn2xuYl5dkECeG3mtGeFOoejYH4jiYnbUtfP+7lOcuNoDERuX22ROcSYbV8+kcrIJzhfI86vApYFmxp+kxTW9cHHxC8AClyXp8um0ZRpUHe3Ftm3Cnc0UHDyAUV7Ohn1nWb/pMC3dA5DmAreBbUsCDdepOXCGwpJJlOfPAasDp/kYUprIAW30mUZEmorDuQpua4L8tgi15V72VGaQ23KJ9GXLSZk3j731nby39Tjkp+OZ4sPt0nHrGm63gafQD14XazbXUt8GIvdjcHvBCify1qAWy41RUY6SEbSpeSKTRhxyFj0dHa/eeRK8KXg8JtIZ7cLSlngmeiA4yNvfnYrmEn3CUogkjg8tloiHDl7ApK4I9XkaO54qRkyfQQBoaOqGiZ442EgoE1I50tCMpQYyHyJZKGux/DfCoQQ51wfZvzAH7s/G7iXqIFHvu5WYGr1hi6ghzfRY5orHKmD/KKAA36CgXfTTovVQpH7HbUDEuTVwwCLLa5Kq3sOtKu64mTDHAFvGDqp0Fe7tpvbMn2gumFWaBW1BRLJd6hp09FN1b3FUoew8hEhyD6nhvxNNZLoz+PrkULLftqICNEGoIxQHVf3wlW7MAj8bF5cArTidPw3FYrwIFYd+YPHYKV+Kl7qWv5jsy2bBtAqKSrLZdySA1dqHpWlYjsTqG8Rq6sE7ycuht6qYnqXjXFwEwQC4PImApgJeTHhZCoHHdPP92YNMyy5l+T3lrJk/gy7Lotey0TVBYY6XVY+WcvCNuRT5dZyml5Gt34InJeH5qVIkmkuBGmDV2FlDM+jo7+TGwA1eenAt6x9+EUiL09IabiS1cR3enh9xXKZKwgk9VF1Rw8CcRM5D1B90+gf7udLdxNSJJcwrmk1F3t1kuNNo673O9jMXmSU+5/XSRlJ0F440ksGUJUuGgUpeAT5MtFKoRwi6wz10hjqxnSGTNodN8jyCuvln8KXqWAMuRNKQp0JVEyOv64+AylhZMEqkeqSMOpJqQyIJ9qWzpawOX4bE6XUhkpcKr8VKl7giSiXPX5J9NSy6kARCaTye1UZVwWUIqfszKUyVjB8MdxIFy4JYiZhUwo4eTYHVxf+A4WBbSesatbNREZCsLn0OeBZoSrS7S6FUVk5ppCynFdnvJr4I4misSr+5s2G5Vcn1JbALWAesBKaqwR7LoMQT5NWiC2ALHEcbBqpkexz4DPgmoUbgXyyj+w/ZPQAwAAAAAElFTkSuQmCC" alt="chrome icon" />
+              </div>
+              <div class="button-img__right">
+                <p class="text__smallest">Available in The</p>
+                <p class="text__smaller">Chrome Web Store</p>
+              </div>
+            </a>
+          </div>
+          <div class="security__right"></div>
+        </div>
+      </section>
+
+      <section id="integration" class="integration">
+        <div class="container integration__container">
+          <p class="text_with-bg">One-Time Payment</p>
+          <p class="text_biggest">
+            Integration With <br />
+            <span class="text_gradient">Popular Apps</span>
+          </p>
+          <p class="focus__description">
+            Notero integrate with popular appls. Help you easy to connect and
+            collaborate
+          </p>
+          <div class="integration__icons">
+            <div>
+              <img
+                src="/itech-web/assets/integration-1-CAPmyp4k.png"
+                alt="integration 1"
+              />
+            </div>
+            <div>
+              <img
+                src="/itech-web/assets/integration-2-BrDMgOtg.png"
+                alt="calendar"
+              />
+            </div>
+            <div>
+              <img
+                src="/itech-web/assets/integration-3-DzPIIkNB.png"
+                alt="integration 3"
+              />
+            </div>
+            <div>
+              <img
+                src="/itech-web/assets/integration-4-B1SlOgYv.png"
+                alt="slack"
+              />
+            </div>
+            <div>
+              <img
+                src="/itech-web/assets/integration-5-DGd2FxLx.png"
+                alt="paypal"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="carousel" class="carousel">
+        <div class="features__wave carousel__wave"></div>
+        <div class="carousel__content">
+          <div class="carousel__hand"></div>
+        </div>
+      </section>
+
+      <section id="community" class="community">
+        <div class="container community__container">
+          <p class="text_with-bg">Notero Community</p>
+          <p class="text_biggest">
+            Join Into
+            <span class="text_gradient">Our Hub</span>
+          </p>
+          <div class="community__content">
+            <a href="#" class="community__social">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="community__left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"
+                />
+              </svg>
+              <div class="community__right">
+                <p class="text_bigger">Github</p>
+                <p class="text_smallest">Open Source & Commnit Code</p>
+              </div>
+            </a>
+            <a href="#" class="community__social">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="community__left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"
+                />
+              </svg>
+              <div class="community__right">
+                <p class="text_bigger">Twitter</p>
+                <p class="text_smallest">Latest News & Update</p>
+              </div>
+            </a>
+            <a href="#" class="community__social">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="currentColor"
+                class="community__left"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM8.287 5.906c-.778.324-2.334.994-4.666 2.01-.378.15-.577.298-.595.442-.03.243.275.339.69.47l.175.055c.408.133.958.288 1.243.294.26.006.549-.1.868-.32 2.179-1.471 3.304-2.214 3.374-2.23.05-.012.12-.026.166.016.047.041.042.12.037.141-.03.129-1.227 1.241-1.846 1.817-.193.18-.33.307-.358.336a8.154 8.154 0 0 1-.188.186c-.38.366-.664.64.015 1.088.327.216.589.393.85.571.284.194.568.387.936.629.093.06.183.125.27.187.331.236.63.448.997.414.214-.02.435-.22.547-.82.265-1.417.786-4.486.906-5.751a1.426 1.426 0 0 0-.013-.315.337.337 0 0 0-.114-.217.526.526 0 0 0-.31-.093c-.3.005-.763.166-2.984 1.09z"
+                />
+              </svg>
+              <div class="community__right">
+                <p class="text_bigger">Telegram</p>
+                <p class="text_smallest">Chanel for Community</p>
+              </div>
+            </a>
+          </div>
+        </div>
       </section>
     </main>
     <footer>
@@ -353,25 +699,20 @@
           <nav class="navigation footer__navigation">
             <ul>
               <li>
-                <a class="link" href="pages/about/index.html">About</a>
+                <a class="link" href="#">Featured</a>
               </li>
               <li>
-                <a class="link" href="pages/product/index.html">Product</a>
+                <a class="link" href="#">About</a>
               </li>
+
               <li>
-                <a class="link" href="pages/service/index.html">Service</a>
+                <a class="link" href="#">Popular apps</a>
               </li>
-              <li><a class="link" href="pages/shop/index.html">Shop</a></li>
-              <li>
-                <a class="link" href="pages/project/index.html">Project</a>
+                <a class="link" href="#">Portfolio</a>
               </li>
-              <li><a class="link" href="pages/post/index.html">Post</a></li>
+              <li><a class="link" href="#">Screens</a></li>
               <li>
-                <a class="link" href="pages/portfolio/index.html">Portfolio</a>
-              </li>
-              <li><a class="link" href="pages/blog/index.html">Blog</a></li>
-              <li>
-                <a class="link" href="pages/contact/index.html">Contact</a>
+                <a class="link" href="#">FAQ</a>
               </li>
             </ul>
           </nav>
