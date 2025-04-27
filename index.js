@@ -29,7 +29,22 @@ burgerMenu.addEventListener("click", () => {
 });
 
 navLinks.forEach((link) => {
-  link.addEventListener("click", function () {
+  link.addEventListener("click", () => {
     headerMenu.classList.remove("active");
+  });
+});
+
+//togle for your security
+const allButtonDropdowns = document.querySelectorAll(".button-dropdown");
+
+allButtonDropdowns.forEach((title, index) => {
+  title.addEventListener("click", () => {
+    allButtonDropdowns[index].classList.toggle("button-dropdown_active");
+
+    allButtonDropdowns.forEach((content, i) => {
+      if (i !== index) {
+        content.classList.remove("button-dropdown_active");
+      }
+    });
   });
 });
