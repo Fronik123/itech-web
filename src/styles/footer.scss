@@ -27,8 +27,6 @@ footer {
     width: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
-    // align-items: center;
     gap: var(--gap);
     padding: var(--gap) 0;
     border-bottom: 2px solid var(--grey-color);
@@ -41,14 +39,6 @@ footer {
   }
 
   .footer__navigation ul {
-    flex-wrap: wrap;
-
-    li {
-      display: flex;
-      width: 80px;
-      align-items: start;
-    }
-
     @media (min-width: s.$tablet) {
       justify-content: space-between;
     }

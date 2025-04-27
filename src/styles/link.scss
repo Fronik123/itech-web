@@ -1,3 +1,4 @@
+@use "./variables.scss" as screen;
 @use "../styles/mixins.scss" as globalMixins;
 
 .link {
@@ -10,39 +11,6 @@
   &:active,
   &:focus {
     color: var(--violett-color);
-
-    &::before {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-    }
-  }
-
-  &.active {
-    color: var(--violett-color);
-    font-weight: bold;
-    &::before {
-      opacity: 1;
-      transform: translateX(-50%) translateY(0);
-    }
-  }
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: -35px;
-    left: 50%;
-    height: 35px;
-    width: 65px;
-
-    @include globalMixins.background-image(
-      "/src/assets/icons/nav/current_section.png",
-      $size: contain,
-      $position: none
-    );
-
-    transform: translateX(-50%) translateY(-20px);
-    opacity: 0;
-    transition: all 0.3s ease;
   }
 
   &_small {
@@ -56,6 +24,54 @@
     &:focus,
     &_active {
       color: var(--blue-color);
+    }
+  }
+}
+
+.header__link {
+  @media (min-width: screen.$tablet) {
+    &:hover,
+    &:active,
+    &:focus {
+      &::before {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+
+    &.active {
+      color: var(--violett-color);
+      font-weight: bold;
+      &::before {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+      }
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -25px;
+      left: 50%;
+      height: 35px;
+      width: 65px;
+
+      @include globalMixins.background-image(
+        "/src/assets/icons/nav/current_section.png",
+        $size: contain,
+        $position: none
+      );
+
+      transform: translateX(-50%) translateY(-20px);
+      opacity: 0;
+      transition: all 0.3s ease;
+    }
+  }
+
+  @media (min-width: screen.$bigger-tablet) {
+    &::before {
+      top: -35px;
+      left: 50%;
     }
   }
 }
