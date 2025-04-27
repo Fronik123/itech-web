@@ -1,4 +1,4 @@
-View project https://fronik123.github.io/itech-web/
+View site https://fronik123.github.io/itech-web/
 
 ## How to run:  
 
