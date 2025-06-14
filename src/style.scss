@@ -43,6 +43,10 @@ img {
   height: auto;
 }
 
+section {
+  scroll-margin-top: 60px;
+}
+
 @keyframes rotate-center {
   0% {
     transform: rotate(0);
