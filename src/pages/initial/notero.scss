@@ -53,13 +53,6 @@
     );
   }
 
-  &__animation {
-    @include localMixin.rotate-center(
-      -15%,
-      "/src/assets/images/initial/notero-bubbles.png"
-    );
-  }
-
   &__right {
     display: flex;
     flex-direction: column;
